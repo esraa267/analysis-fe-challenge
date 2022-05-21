@@ -1,29 +1,70 @@
-# Analysis Chart Front-End Challenge
+# Getting Started with Create React App
 
-The challenge is to implement an analytics dashboard like this one with the description below:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![design](./chart-design.jpg)
+## Available Scripts
 
-## Acceptance Criteria
+In the project directory, you can run:
 
-1. A loading screen is expected while fetching the "data.json" from server. You can use the "raw" file directly from Github or serve it from a local server.
-2. The 3 drop-down lists at the top should filter the data. "Select School" should have the option to "Show all".
-3. A chart renders the data of the selected schools similarly to the image.
-4. On the right of the screen, the total number of lessons is displayed for the selected Camp, School and Country, followed by a list of the schools with how many lessons each offers.
-5. The schools list from point 4 should include toggles to show or hide the line chart of a certain school.
-6. Upon clicking on a point in the chart from point 3, the app should navigate to another page where all the details of that item are shown. No UX is provided, but use a simple layout that shows: like country, camp, school, month and number of lessons.
-7. After coming back from the details page implemented in point 6, the last filtering state should be preserved.
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Requirements
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- Use (Angular 2+ Or ReactJS) and Chart.js(or any other free chart libraries).
-- Good unit-test cases is required to secure the code. Bonus if E2E testing is implemented.
-- The project should be performant and scalable. Try to follow best pratices in areas such as project structure, responsive web design, linting, documentation, components structure, layering, modularity.
-- Bonus points:
-    - Implement a toggle to switch on/off dark mode.
-    - Multi-lingual support.
-    - Store the data centrally by using any state-management library of your choice (EX: NgRx).
+### `npm test`
 
-Note: The spec is vague on purpose. Please document in a separate markdown file any decisions you've made indicating your analysis and the justification for your choice. That documentation will be considered as part of the assessment.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

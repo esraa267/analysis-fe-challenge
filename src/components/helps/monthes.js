@@ -12,7 +12,8 @@ const month = [
   "Nov",
   "Dec",
 ];
-const numberOfLessons = (school,filterdata) => {
+const colors = ["red", "green", "blue", "black"];
+const numberOfLessons = (school, filterdata) => {
   const count = {};
 
   filterdata.forEach((element) => {
@@ -21,4 +22,4 @@ const numberOfLessons = (school,filterdata) => {
 
   return count[school];
 };
-export  { month, numberOfLessons };
+export { month, numberOfLessons,colors };

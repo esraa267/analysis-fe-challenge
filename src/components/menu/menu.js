@@ -1,22 +1,19 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { FilterSchools } from "../../store/action";
 
 const Menu = (props) => {
-  const [checked, setChecked] = useState(false);
+ const dispatch= useDispatch();
   return (
-    <li >
-      <div class="form-check">
+    <li>
+      <div className="form-check">
         <input
-          class="form-check-input"
-          checked={checked}
-          onChange={() => {
-            props.check(props.data, checked);
-            setChecked(!checked);
-          }}
+          className="form-check-input"
+          checked={props.checked}
+          onChange={() =>dispatch(FilterSchools(props.index)) }
           type="checkbox"
-          name="flexRadioDefault"
-          id="flexRadioDefault2"
         />
-        <label class="form-check-label" for="flexRadioDefault2">
+        <label className="form-check-label">
           <h5>{props.data}</h5>
           <p className="text-secondary">{props.numOfLessons}Lessons</p>
         </label>

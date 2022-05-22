@@ -5,7 +5,7 @@ import { FilterSchools } from "../../store/action";
 const Menu = (props) => {
  const dispatch= useDispatch();
   return (
-    <li>
+    <li >
       <div className="form-check">
         <input
           className="form-check-input"
@@ -14,7 +14,7 @@ const Menu = (props) => {
           type="checkbox"
         />
         <label className="form-check-label">
-          <h5>{props.data}</h5>
+          <p className="fs-sm-4">{props.data}</p>
           <p className="text-secondary">{props.numOfLessons}Lessons</p>
         </label>
       </div>

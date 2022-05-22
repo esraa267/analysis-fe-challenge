@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import './details.css'
 const Details = () => {
   const params = useParams();
   const filterdata = useSelector((data) => data.data);
@@ -19,7 +20,8 @@ const Details = () => {
   }
 
   return (
-    <>
+    <div className="content">
+
       <table className="table">
         <thead>
           <tr>
@@ -29,7 +31,7 @@ const Details = () => {
         </thead>
         <tbody>{list}</tbody>
       </table>
-    </>
+    </div>
   );
 };
 export default Details;

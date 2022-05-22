@@ -22,37 +22,36 @@ const Main = () => {
     dispatch(FilterData2(value.target.value));
   };
   const chartdata = useSelector((data) => data.chartdata);
- 
+
   return (
     <>
       {console.log(chartdata)}
       <div className="container">
-        <h1 className="mt-5">Analysis Chart</h1>
-        <h4 className="mt-5">Number of Lessons</h4>
+        <h1 className="my-5">Analysis Chart</h1>
         <div className="d-flex justify-content-around">
           <DropDown
             value={country}
             select={selectCountry}
-            title="Select country"
+            title="Country"
             data={countries}
           />
           <DropDown
             value={camp}
             select={selectCamp}
-            title="Select camp"
+            title="Camp"
             data={camps}
           />
           <DropDown
             showAll={true}
-            title="Select school"
+            title="School"
             data={schools.map((e) => e.data)}
           />
         </div>
         <div className="row mt-5">
-          <div className="col-8 ">
+          <div className="col-md-8 col-sm-12 ">
             <LineChart chartdata={chartdata} />
           </div>
-          <div className="col-4 text-center ">
+          <div className="col-md-4 col-sm-12 text-center ">
             <h1>
               <span className="mx-2">{filterdata.length}</span>Lessons
             </h1>
@@ -60,7 +59,7 @@ const Main = () => {
               in <span className="mx-2">{camp}</span>
             </h6>
             <div className="mt-4 menu">
-              <ul>
+              <ul className="d-flex flex-lg-column flex-sm-wrap">
                 {schools.map((s, index) => (
                   <Menu
                     index={index}
